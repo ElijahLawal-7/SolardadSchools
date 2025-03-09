@@ -3,6 +3,7 @@
     width: 100%;
     aspect-ratio: 16 / 9;
     margin: 0px auto;
+    margin-top: 25px;
     position: relative;
 }
 

@@ -5,6 +5,105 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/about-us",
+        "destination": "/about-us.html"
+      },
+      {
+        "source": "/contact",
+        "destination": "/contact.html"
+      },
+      {
+        "source": "/apply",
+        "destination": "/2020-2021-registration-form.html"
+      },
+      {
+        "source": "/sign-up",
+        "destination": "/sign-up.html"
+      },
+      {
+        "source": "/vocations",
+        "destination": "/vocations.html"
+      },
+      {
+        "source": "/admissions",
+        "destination": "/admissions.html"
+      },
+      {
+        "source": "/junior-secondary",
+        "destination": "/junior-secondary.html"
+      },
+      {
+        "source": "/nursery-school",
+        "destination": "/nursery-school.html"
+      },
+      {
+        "source": "/primary-school",
+        "destination": "/primary-school.html"
+      },
+      {
+        "source": "/gallery",
+        "destination": "/gallery.html"
+      },
+      {
+        "source": "/faq",
+        "destination": "/faq.html"
+      },
+      {
+        "source": "/student-res",
+        "destination": "/student-res.html"
+      },
+      {
+        "source": "/coming-soon",
+        "destination": "/coming-soon.html"
+      },
+      {
+        "source": "/**", 
+        "destination": "/index.html" 
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/portal",
+        "destination": "https://nersapp.africa/org/solardad/auth",
+        "type": 301 
+      }, 
+      {
+        "source": "/news",
+        "destination": "https://solytest.blogspot.com/",
+        "type": 301 
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|png|gif|webp|svg|ico)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000, public"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(css|js)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000, public"
+          }
+        ]
+      },
+      {
+        "source": "/**/*.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      }
     ]
   }
 }
