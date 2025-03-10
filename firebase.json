@@ -13,7 +13,7 @@
       },
       {
         "source": "/contact",
-        "destination": "/contact.html"
+        "destination": "/contact-us.html"
       },
       {
         "source": "/apply",
@@ -26,6 +26,10 @@
       {
         "source": "/vocations",
         "destination": "/vocations.html"
+      },
+      {
+        "source": "/exam-portal",
+        "destination": "/exam-portal.html"
       },
       {
         "source": "/admissions",
@@ -44,6 +48,10 @@
         "destination": "/primary-school.html"
       },
       {
+        "source": "/senior-school",
+        "destination": "/senior-secondary.html"
+      },
+      {
         "source": "/gallery",
         "destination": "/gallery.html"
       },
@@ -60,20 +68,16 @@
         "destination": "/coming-soon.html"
       },
       {
+        "source": "/portal/**", 
+        "function": "portal"
+      },
+      {
+        "source": "/blog/**", 
+        "function": "blog"
+      },
+      {
         "source": "/**", 
-        "destination": "/index.html" 
-      }
-    ],
-    "redirects": [
-      {
-        "source": "/portal",
-        "destination": "https://nersapp.africa/org/solardad/auth",
-        "type": 301 
-      }, 
-      {
-        "source": "/news",
-        "destination": "https://solytest.blogspot.com/",
-        "type": 301 
+        "destination": "/index.html"
       }
     ],
     "headers": [
@@ -104,6 +108,16 @@
           }
         ]
       }
+    ]
+  },
+  "functions": {
+    "source": "functions",
+    "codebase": "default",
+    "ignore": [
+      "node_modules",
+      ".git",
+      "firebase-debug.log",
+      "firebase-debug.*.log"
     ]
   }
 }
