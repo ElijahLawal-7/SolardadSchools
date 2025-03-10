@@ -6,6 +6,18 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "redirects": [
+      {
+        "source": "/portal",
+        "destination": "https://nersapp.africa/org/solardad/auth",
+        "type": 301
+      },
+      {
+        "source": "/blog",
+        "destination": "https://solytest.blogspot.com/",
+        "type": 301
+      }
+    ],
     "rewrites": [
       {
         "source": "/about-us",
@@ -66,19 +78,8 @@
       {
         "source": "/coming-soon",
         "destination": "/coming-soon.html"
-      },
-      {
-        "source": "/portal/**", 
-        "function": "portal"
-      },
-      {
-        "source": "/blog/**", 
-        "function": "blog"
-      },
-      {
-        "source": "/**", 
-        "destination": "/index.html"
       }
+      
     ],
     "headers": [
       {
