@@ -68,6 +68,14 @@
         "destination": "/coming-soon.html"
       },
       {
+        "source": "/portal",
+        "destination": "/portal.html"
+      },
+      {
+        "source": "/blog",
+        "destination": "/blog.html"
+      },
+      {
         "source": "/**",
         "destination": "/index.html"
       }
