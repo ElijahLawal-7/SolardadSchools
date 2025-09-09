@@ -13,6 +13,238 @@ body {
   font-display: swap;
 }
 
+        /* Unique class names to avoid conflicts */
+        .gls-contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: auto;
+            background: linear-gradient(135deg, #5c7954 0%, #4ba27278 100%);
+            font-family: 'Poppins', sans-serif;
+            padding: 15px;
+        }
+
+        .gls-contact-form {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            background: #5c7954;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            z-index: 1;
+            transition: all 0.5s ease;
+        }
+
+        .gls-contact-form:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 35px 55px rgba(0, 0, 0, 0.2);
+        }
+
+        .gls-contact-form::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -40%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            transform: skewX(-15deg);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .gls-contact-title {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-align: center;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .gls-input-group {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .gls-input-field {
+            width: 100%;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .gls-input-field:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .gls-input-field::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .gls-input-label {
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            padding: 0 10px;
+            background: linear-gradient(135deg, #5c7954 0%, #075e2b76 100%);
+            color: #fff;
+            font-size: 0.8rem;
+            border-radius: 20px;
+            transform: translateY(0);
+            opacity: 1;
+            transition: all 0.3s ease;
+        }
+
+        .gls-input-field:focus + .gls-input-label,
+        .gls-input-field:not(:placeholder-shown) + .gls-input-label {
+            transform: translateY(-20px);
+            opacity: 1;
+        }
+
+        .gls-textarea-field {
+            width: 100%;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 20px;
+            font-size: 1rem;
+            color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            resize: none;
+            min-height: 120px;
+            transition: all 0.3s ease;
+        }
+
+        .gls-textarea-field:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .gls-submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: #fff;
+            color: #5c7954;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .gls-submit-btn:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .gls-submit-btn:active {
+            transform: translateY(0);
+        }
+
+        /* Floating bubbles background */
+        .gls-bubbles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            overflow: hidden;
+        }
+
+        .gls-bubble {
+            position: absolute;
+            bottom: -100px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: gls-float 10s infinite ease-in;
+        }
+
+        @keyframes gls-float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .gls-contact-form {
+                padding: 30px 20px;
+            }
+            
+            .gls-contact-title {
+                font-size: 1.5rem;
+            }
+        }
+        .form-success-message {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0,0,0,0.8);
+          backdrop-filter: blur(5px);
+          z-index: 1000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+      }
+      
+      .success-content {
+          background: white;
+          padding: 2rem;
+          border-radius: 10px;
+          text-align: center;
+          max-width: 400px;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      }
+      
+      .success-icon {
+          width: 60px;
+          height: 60px;
+          color: #4CAF50;
+          margin-bottom: 1rem;
+      }
+      
+      .close-message {
+          background: #4CAF50;
+          color: white;
+          border: none;
+          padding: 0.5rem 1.5rem;
+          border-radius: 5px;
+          margin-top: 1rem;
+          cursor: pointer;
+          transition: background 0.3s;
+      }
+      
+      .close-message:hover {
+          background: #3e8e41;
+      }
+
+
 .contact-buttons {
   display: flex;
   flex-direction: column;
@@ -43,9 +275,9 @@ h6 {
   text-align: center;
   overflow: hidden;
   position: relative;
-  font-size: 1.5rem; /* Adjust as needed */
+  font-size: 1.3rem; /* Adjust as needed */
   white-space: nowrap;
-  background: #f9f9f9; /* Optional: adds a background to make text more readable */
+  
 }
 
 h6 span {

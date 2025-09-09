@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+</head>
+<body>
+    <div class="gls-contact-container">
+        <div class="gls-bubbles" id="glsBubbles"></div>
+        <form class="gls-contact-form" action="https://formsubmit.co/goodluckelijah21@gmail.com" method="POST">
+            <h2 class="gls-contact-title">Contact Us</h2>
+            
+            <div class="gls-input-group">
+                <input type="text" class="gls-input-field" name="name" placeholder="Your Name" required>
+                <label class="gls-input-label">Your Name</label>
+            </div>
+            
+            <div class="gls-input-group">
+                <input type="tel" class="gls-input-field" name="phone" placeholder="Phone">
+                <label class="gls-input-label">Phone</label>
+            </div>
+            
+            <div class="gls-input-group">
+                <input type="email" class="gls-input-field" name="email" placeholder="Email" required>
+                <label class="gls-input-label">Email</label>
+            </div>
+            
+            <div class="gls-input-group">
+                <textarea class="gls-textarea-field" name="message" placeholder="Message" required></textarea>
+                <label class="gls-input-label">Message</label>
+            </div>
+            
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+            <input type="hidden" name="_captcha" value="false">
+            
+            <button type="submit" class="gls-submit-btn">SEND MESSAGE</button>
+        </form>
+    </div>
+
+    <script>
+        // Create floating bubbles
+        document.addEventListener('DOMContentLoaded', function() {
+            const bubblesContainer = document.getElementById('glsBubbles');
+            
+            for (let i = 0; i < 20; i++) {
+                const bubble = document.createElement('div');
+                bubble.classList.add('gls-bubble');
+                
+                // Random size between 10px and 60px
+                const size = Math.random() * 50 + 10;
+                bubble.style.width = `${size}px`;
+                bubble.style.height = `${size}px`;
+                
+                // Random position
+                bubble.style.left = `${Math.random() * 100}%`;
+                
+                // Random animation duration between 10s and 20s
+                const duration = Math.random() * 10 + 10;
+                bubble.style.animationDuration = `${duration}s`;
+                
+                // Random delay
+                bubble.style.animationDelay = `${Math.random() * 5}s`;
+                
+                bubblesContainer.appendChild(bubble);
+            }
+            
+            // Form submission animation
+            const form = document.querySelector('.gls-contact-form');
+            form.addEventListener('submit', function(e) {
+                // You can add a loading animation here if needed
+                // e.preventDefault(); // Remove this line when going live
+                // console.log('Form submitted!');
+            });
+        });
+    </script>
+</body>
+</html>
