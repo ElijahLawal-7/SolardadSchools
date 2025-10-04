@@ -12,6 +12,10 @@
         "destination": "/about-us.html"
       },
       {
+        "source": "/siit",
+        "destination": "/siit.html"
+      },
+      {
         "source": "/contact",
         "destination": "/contact-us.html"
       },

@@ -513,6 +513,13 @@ body {
   .share-buttons {
     gap: 10px;
   }
+  .full-post-view {
+  z-index: 9999 !important;
+}
+
+  .post-navigation {
+  z-index: 10000 !important;
+}
   
   .share-btn {
     min-width: 120px;

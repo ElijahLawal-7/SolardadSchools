@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Solardad, Solardadschools.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/Sola.jpg" type="images/Sola.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Solardad Institute of Information Technology - Professional skills acquisition program in Web Development, Software Engineering, Cybersecurity, and Computer Applications">
+  
+  <title>SIIT Skills Acquisition Program - Solardad Schools</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,400,500,600,700&display=swap);
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    /* Hero Banner Section */
+    .siit-hero {
+      background: linear-gradient(135deg, #5c7954 0%, #4ba272 100%);
+      padding: 80px 0 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .siit-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect fill="rgba(255,255,255,0.03)" width="50" height="50"/></svg>');
+      opacity: 0.5;
+    }
+    
+    .siit-hero h1 {
+      color: #fff;
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+    }
+    
+    .siit-hero p {
+      color: #fff;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    
+    /* Course Cards */
+    .course-card {
+      border-radius: 20px;
+      backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(255, 255, 255, 0.75);
+      border: 1px solid rgba(209, 213, 219, 0.3);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      padding: 30px;
+      margin-bottom: 30px;
+      height: 100%;
+    }
+    
+    .course-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .course-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+      background: linear-gradient(135deg, #5c7954, #4ba272);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+    
+    .course-title {
+      color: #2d3748;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    
+    .course-price {
+      background: #5c7954;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 50px;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin: 15px 0;
+    }
+    
+    .course-duration {
+      color: #5c7954;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .course-features {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+    
+    .course-features li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(92, 121, 84, 0.1);
+    }
+    
+    .course-features li:before {
+      content: "✓";
+      color: #5c7954;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    
+    /* FAQ Section */
+    .faq-section {
+      padding: 60px 0;
+      background: #f8f9fa;
+    }
+    
+    .faq-item {
+      background: #fff;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    
+    .faq-question {
+      padding: 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      color: #2d3748;
+      transition: all 0.3s ease;
+    }
+    
+    .faq-question:hover {
+      background: #f8f9fa;
+      color: #5c7954;
+    }
+    
+    .faq-question .icon {
+      transition: transform 0.3s ease;
+      font-size: 1.5rem;
+      color: #5c7954;
+    }
+    
+    .faq-question.active .icon {
+      transform: rotate(180deg);
+    }
+    
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      padding: 0 20px;
+    }
+    
+    .faq-answer.active {
+      max-height: 500px;
+      padding: 0 20px 20px;
+    }
+    
+    /* Curriculum Section */
+    .curriculum-section {
+      padding: 60px 0;
+    }
+    
+    .curriculum-card {
+      background: linear-gradient(135deg, #5c7954 0%, #4ba272 100%);
+      color: #fff;
+      border-radius: 15px;
+      padding: 40px;
+      text-align: center;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+    
+    .curriculum-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(92, 121, 84, 0.3);
+    }
+    
+    .curriculum-card i {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    
+    .curriculum-btn {
+      background: #fff;
+      color: #5c7954;
+      padding: 12px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    .curriculum-btn:hover {
+      background: #f0f0f0;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    /* Application Form */
+    .application-form {
+      background: linear-gradient(135deg, #5c7954 0%, #4ba272 100%);
+      padding: 60px 0;
+    }
+    
+    .form-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    }
+    
+    .form-group {
+      margin-bottom: 25px;
+    }
+    
+    .form-group label {
+      color: #2d3748;
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: block;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 12px 20px;
+      border: 2px solid rgba(92, 121, 84, 0.2);
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+    
+    .form-control:focus {
+      outline: none;
+      border-color: #5c7954;
+      box-shadow: 0 0 0 3px rgba(92, 121, 84, 0.1);
+    }
+    
+    .submit-btn {
+      background: #5c7954;
+      color: #fff;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+    }
+    
+    .submit-btn:hover {
+      background: #4a6142;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(92, 121, 84, 0.3);
+    }
+    
+    /* Benefits Section */
+    .benefits-section {
+      padding: 60px 0;
+      background: #fff;
+    }
+    
+    .benefit-icon {
+      font-size: 3rem;
+      color: #5c7954;
+      margin-bottom: 20px;
+    }
+    
+    /* Sticky CTA */
+    .sticky-cta {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    
+    .sticky-cta a {
+      background: #5c7954;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 5px 20px rgba(92, 121, 84, 0.4);
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    
+    @media (max-width: 768px) {
+      .siit-hero h1 {
+        font-size: 2rem;
+      }
+      .course-card {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <section class="menu cid-saNsEdzrTP" once="menu" id="menu2-0">    
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="/"><img src="assets/images/Sola.jpg" alt="Solardad Schools" title="" style="height: 4.5rem; width: 4.5rem;"></a>
+                    <a href="/"><img src="assets/images/Sol2.jpg" alt="Solardad Schools" title="" style="height: 3.5rem; width: 11.0rem;"></a>
+                </span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                <li class="nav-item">
+                    <a class="nav-link link text-black display-4" href="/">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link link text-black dropdown-toggle display-4" href="#" aria-expanded="false" data-toggle="dropdown-submenu">About Us</a>
+                    <div class="dropdown-menu">
+                        <a class="text-black dropdown-item display-4" href="/about-us">About Us</a>
+                        <a class="text-black dropdown-item display-4" href="/admissions">Admission & Fees</a>
+                        <a class="text-black dropdown-item display-4" href="/faq">FAQs</a>
+                        <a class="text-black dropdown-item display-4" href="/vocations">Vocational Studies</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link link text-black dropdown-toggle display-4" href="#" aria-expanded="false" data-toggle="dropdown-submenu">Our Schools</a>
+                    <div class="dropdown-menu">
+                        <a class="text-black dropdown-item display-4" href="/nursery-school">Nursery School</a>
+                        <a class="text-black dropdown-item display-4" href="/primary-school">Primary School</a>
+                        <a class="text-black dropdown-item display-4" href="/junior-secondary">Junior College</a>
+                        <a class="text-black dropdown-item display-4" href="/senior-school">Senior College</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-black display-4" href="/gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link display-4" href="/siit" style="color: #5c7954; font-weight: 700;"><b>SIIT Program</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-black display-4" href="/apply"><b>Apply</b></a>
+                </li>
+            </ul>
+            <div class="navbar-buttons mbr-section-btn">
+                <a class="btn btn-sm btn-primary display-4" href="/contact">
+                    <span class="btn-icon mbri-mobile mbr-iconfont mbr-iconfont-btn"></span>
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+  </section>
+  <br>
+  <!-- Hero Section -->
+  <section class="siit-hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="animate__animated animate__fadeInLeft">Solardad Institute of Information Technology (SIIT)</h1>
+          <p class="animate__animated animate__fadeInLeft animate__delay-1s">Future-Proof Your Child's Career with Professional Digital Skills Training</p>
+          <a href="#application" class="btn btn-lg" style="background: #fff; color: #5c7954; font-weight: 700; padding: 15px 40px; border-radius: 50px;">Enroll in Cohort 1</a>
+        </div>
+        <br>
+        <div class="col-lg-5 text-center">
+          <img src="assets/siit design.png" alt="SIIT Program" style="max-width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);" class="animate__animated animate__fadeInRight">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Announcement Banner -->
+  <section style="background: #f7ed4a; padding: 15px 0; text-align: center;">
+    <div class="container">
+      <h6 style="margin: 0; color: #3f3c03; font-weight: 600;">
+        <span><i class="fas fa-bullhorn"></i> Cohort 1 is Now in Session! Limited Spaces Available - Enroll Today!</span>
+      </h6>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="features6" style="padding: 80px 0;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-2" style="color: #2d3748;">Available Courses at SIIT</h2>
+        <p class="display-7" style="color: #4a5568;">Professional certifications designed for the digital economy</p>
+      </div>
+      
+      <div class="row">
+        <!-- Web Development -->
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="course-card">
+            <div class="course-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="course-title">Web Development</h3>
+            <div class="text-center">
+              <span class="course-price">₦35,000 per term</span>
+              <p class="course-duration"><i class="fas fa-clock"></i> Duration: 12 Months</p>
+            </div>
+            <ul class="course-features">
+              <li>Frontend Development with HTML, CSS, React.js</li>
+              <li>Backend Development with Node.js & Express.js</li>
+              <li>Working with SQL/NoSQL Databases</li>
+              <li>Responsive Web Design</li>
+              <li>Version Control with Git/GitHub</li>
+              <li>Deployment and Portfolio Development</li>
+            </ul>
+            <div class="text-center mt-3">
+              <a href="#application" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Software Engineering -->
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="course-card">
+            <div class="course-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3 class="course-title">Software Engineering</h3>
+            <div class="text-center">
+              <span class="course-price">₦40,000 per term</span>
+              <p class="course-duration"><i class="fas fa-clock"></i> Duration: 20 Months</p>
+            </div>
+            <ul class="course-features">
+              <li>Linux OS & Scripting Fundamentals</li>
+              <li>Software Development Lifecycle</li>
+              <li>Object-Oriented Programming in Python & C</li>
+              <li>Data Structures & Algorithms</li>
+              <li>Version Control, Software Testing, and Debugging</li>
+              <li>Building robust, real-world applications</li>
+            </ul>
+            <div class="text-center mt-3">
+              <a href="#application" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="course-card">
+            <div class="course-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="course-title">Cybersecurity & Ethical Hacking</h3>
+            <div class="text-center">
+              <span class="course-price">₦40,000 per term</span>
+              <p class="course-duration"><i class="fas fa-clock"></i> Duration: 20 Months</p>
+            </div>
+            <ul class="course-features">
+              <li>Threats, Vulnerabilities, and Risk Assessment</li>
+              <li>Ethical Hacking Tools & Techniques</li>
+              <li>Network Security & Cryptography</li>
+              <li>Incident Response & Compliance</li>
+              <li>Cybersecurity Projects & Case Studies</li>
+            </ul>
+            <div class="text-center mt-3">
+              <a href="#application" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Computer Applications -->
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="course-card">
+            <div class="course-icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <h3 class="course-title">Computer Applications</h3>
+            <div class="text-center">
+              <span class="course-price">₦28,000 per term</span>
+              <p class="course-duration"><i class="fas fa-clock"></i> Duration: 6 Months</p>
+            </div>
+            <ul class="course-features">
+              <li>Microsoft Office Suite (Word, Excel, PowerPoint)</li>
+              <li>Database Management using Microsoft Access</li>
+              <li>Spreadsheet Analysis for businesses and finance</li>
+              <li>Graphics Design Tools like CorelDraw & Canva Pro</li>
+              <li>Presentation & Business Skills</li>
+            </ul>
+            <div class="text-center mt-3">
+              <a href="#application" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-2" style="color: #2d3748;">Membership Benefits</h2>
+        <p class="display-7" style="color: #4a5568;">What You Get When You Enroll</p>
+      </div>
+      
+      <div class="row text-center">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="benefit-icon"><i class="fas fa-book-open"></i></div>
+          <h5>Study Materials & Professional Tools</h5>
+          <p>Access to comprehensive learning resources</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="benefit-icon"><i class="fas fa-computer"></i></div>
+          <h5>Modern Computer Laboratories</h5>
+          <p>State-of-the-art equipment for practical learning</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="benefit-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h5>One-on-One Coaching</h5>
+          <p>Mentorship with industry professionals</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="benefit-icon"><i class="fas fa-certificate"></i></div>
+          <h5>Professional Certifications</h5>
+          <p>Recognized credentials upon completion</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="benefit-icon"><i class="fas fa-briefcase"></i></div>
+          <h5>Resume Support</h5>
+          <p>Career guidance and resume building</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="benefit-icon"><i class="fas fa-handshake"></i></div>
+          <h5>Interview Preparation</h5>
+          <p>Get ready for the job market</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="benefit-icon"><i class="fas fa-user-graduate"></i></div>
+          <h5>No Academic Interference</h5>
+          <p>Flexible schedule for students</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="benefit-icon"><i class="fas fa-globe"></i></div>
+          <h5>Global Opportunities</h5>
+          <p>Skills recognized worldwide</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-2" style="color: #2d3748;">Frequently Asked Questions</h2>
+        <p class="display-7" style="color: #4a5568;">Got questions? We've got answers</p>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Who can enroll in the SIIT program?</span>
+              <span class="icon">▼</span>
+            </div>
+          <div class="faq-item">
+            <div class="faq-answer">
+              <p>The program is open to students, graduates, and young people ready to position themselves as leaders in the digital economy. It's designed not to interfere with regular academic programs.</p>
+            </div>
+            <div class="faq-question">
+              <span>How can I apply ?</span>
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-answer">
+              <p>The first step in the application procedures is to fill out the online interest form. The visit Solardad College, and purchase the formal application form at N5,000. <br>
+            Fill the form and submit, after which you will be given the official acceptance letter and accepted to commence the Program. Note that you are not mandated to pay the program cost before you begin. </p> 
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What are the payment terms?</span>
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-answer">
+              <p>Fees are paid per term. Web Development is ₦35,000 per term, Software Engineering and Cybersecurity are ₦40,000 per term, and Computer Applications is ₦28,000 per term.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Will I receive a certificate after completion?</span>
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes! All graduates receive recognized professional certifications that are valuable in the job market both locally and internationally.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What are the class schedules?</span>
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-answer">
+              <p>Classes are scheduled flexibly to accommodate students' regular school activities. Specific schedules will be provided upon enrollment.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do I need prior computer knowledge?</span>
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-answer">
+              <p>Basic computer literacy is helpful but not required for the Computer Applications course. Other courses are designed for beginners and progressively build advanced skills.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can I work while learning these skills?</span>
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely! Many of our students start freelancing or taking on small projects even before completing their courses. We provide guidance on how to monetize your skills early.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Where is the training held?</span>
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-answer">
+              <p>All training takes place at Solardad College, No. 1 Ikuehi Close, G.R.A, Okene, in our modern computer laboratories.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum Download Section -->
+  <section class="curriculum-section" id="curriculum">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-2" style="color: #2d3748;">Course Curriculum</h2>
+        <p class="display-7" style="color: #4a5568;">Download detailed curriculum for each program</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="curriculum-card">
+            <i class="fas fa-file-pdf"></i>
+            <h4>Web Development Curriculum</h4>
+            <a href="assets/SIIT Web Dev Syllabus.pdf" class="curriculum-btn"><i class="fas fa-download"></i> Download PDF</a>
+            <a href="assets/SIIT Web Dev Syllabus.pdf" class="curriculum-btn" style="display: block; margin-top: 10px;"><i class="fas fa-eye"></i> View Online</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="curriculum-card">
+            <i class="fas fa-file-pdf"></i>
+            <h4>Software Engineering Curriculum</h4>
+            <a href="#" class="curriculum-btn"><i class="fas fa-download"></i> Download PDF</a>
+            <a href="#" class="curriculum-btn" style="display: block; margin-top: 10px;"><i class="fas fa-eye"></i> View Online</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="curriculum-card">
+            <i class="fas fa-file-pdf"></i>
+            <h4>Cybersecurity Curriculum</h4>
+            <a href="#" class="curriculum-btn"><i class="fas fa-download"></i> Download PDF</a>
+            <a href="#" class="curriculum-btn" style="display: block; margin-top: 10px;"><i class="fas fa-eye"></i> View Online</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="curriculum-card">
+            <i class="fas fa-file-pdf"></i>
+            <h4>Computer Applications Curriculum</h4>
+            <a href="assets/SIIT Comp APP Syllabus.pdf" class="curriculum-btn"><i class="fas fa-download"></i> Download PDF</a>
+            <a href="assets/SIIT Comp APP Syllabus.pdf" class="curriculum-btn" style="display: block; margin-top: 10px;"><i class="fas fa-eye"></i> View Online</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose SIIT Section -->
+  <section style="padding: 80px 0; background: #f8f9fa;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-2" style="color: #2d3748;">Why Parents Must Enroll Their Children in SIIT</h2>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="course-card" style="text-align: center;">
+            <div class="course-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h4 class="course-title">Future-Proof Skills</h4>
+            <p>In today's world, academic certificates alone are not enough. Digital and technical skills are the currency of the future.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="course-card" style="text-align: center;">
+            <div class="course-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h4 class="course-title">Early Advantage</h4>
+            <p>Training children while they are still in school gives them a massive head-start over their peers.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="course-card" style="text-align: center;">
+            <div class="course-icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <h4 class="course-title">Income Opportunities</h4>
+            <p>Graduates of these programs can earn money online, freelance, or start their own businesses.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="course-card" style="text-align: center;">
+            <div class="course-icon">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <h4 class="course-title">Global Relevance</h4>
+            <p>Tech skills are globally recognized, opening opportunities not just in Nigeria but worldwide.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="course-card" style="text-align: center;">
+            <div class="course-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h4 class="course-title">Safe Learning Environment</h4>
+            <p>The program is run under the strict supervision of Solardad Schools, guaranteeing discipline, structure, and academic balance.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="course-card" style="text-align: center;">
+            <div class="course-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h4 class="course-title">Expert Mentorship</h4>
+            <p>Learn from industry professionals with real-world experience in technology and digital innovation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form Section -->
+  <section class="application-form" id="application">
+    <div class="container">
+      <div class="form-container">
+        <h2 class="text-center mb-4" style="color: #2d3748; font-weight: 700;">Apply to SIIT - Cohort 1</h2>
+        <p class="text-center mb-4" style="color: #4a5568;">Take the first step towards securing your child's digital future</p>
+        
+        <form action="https://formsubmit.co/goodluckelijah21@gmail.com" method="POST">
+          <!-- FormSubmit Configuration -->
+          <input type="hidden" name="_subject" value="New SIIT Application - Cohort 1">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://solardadschools.com/siit-thank-you">
+          
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="studentName">Student's Full Name *</label>
+                <input type="text" class="form-control" id="studentName" name="Student Name" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="studentAge">Student's Age *</label>
+                <input type="number" class="form-control" id="studentAge" name="Student Age" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="parentName">Parent/Guardian Name *</label>
+                <input type="text" class="form-control" id="parentName" name="Parent/Guardian Name" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" class="form-control" id="phone" name="Phone Number" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" class="form-control" id="email" name="Email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Home Address *</label>
+            <input type="text" class="form-control" id="address" name="Address" required>
+          </div>
+
+          <div class="form-group">
+            <label for="course">Select Course *</label>
+            <select class="form-control" id="course" name="Course Selected" required>
+              <option value="">-- Choose a Course --</option>
+              <option value="Web Development">Web Development (₦35,000/term - 12 Months)</option>
+              <option value="Software Engineering">Software Engineering (₦40,000/term - 20 Months)</option>
+              <option value="Cybersecurity & Ethical Hacking">Cybersecurity & Ethical Hacking (₦40,000/term - 20 Months)</option>
+              <option value="Computer Applications">Computer Applications (₦28,000/term - 6 Months)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="currentSchool">Current School/Institution</label>
+            <input type="text" class="form-control" id="currentSchool" name="Current School">
+          </div>
+
+          <div class="form-group">
+            <label for="experience">Previous Computer/Tech Experience (if any)</label>
+            <textarea class="form-control" id="experience" name="Previous Experience" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="expectations">What do you hope to achieve from this program?</label>
+            <textarea class="form-control" id="expectations" name="Expectations" rows="4"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="howHeard">How did you hear about SIIT?</label>
+            <select class="form-control" id="howHeard" name="How You Heard About Us">
+              <option value="">-- Select an option --</option>
+              <option value="Social Media">Social Media</option>
+              <option value="School Notice">School Notice</option>
+              <option value="Friend/Family">Friend/Family Recommendation</option>
+              <option value="Website">Solardad Website</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label style="display: flex; align-items: center;">
+              <input type="checkbox" name="Terms Agreement" value="Agreed" required style="margin-right: 10px; width: auto;">
+              I agree that the information provided is accurate and I commit to the program requirements *
+            </label>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Submit Application
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Information Section -->
+  <section style="padding: 60px 0; background: #fff;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-2" style="color: #2d3748;">Get In Touch</h2>
+        <p class="display-7" style="color: #4a5568;">Have questions? We're here to help!</p>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="course-card" style="text-align: center;">
+            <i class="fas fa-map-marker-alt" style="font-size: 3rem; color: #5c7954; margin-bottom: 20px;"></i>
+            <h5 style="font-weight: 700; margin-bottom: 15px;">Location</h5>
+            <p>Solardad College<br>No. 1 Ikuehi Close, G.R.A<br>Okene, Kogi State</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="course-card" style="text-align: center;">
+            <i class="fas fa-phone" style="font-size: 3rem; color: #5c7954; margin-bottom: 20px;"></i>
+            <h5 style="font-weight: 700; margin-bottom: 15px;">Phone Numbers</h5>
+            <p>09064999897<br>08135718993</p>
+            <a href="tel:09064999897" class="btn btn-sm btn-primary mt-2">Call Now</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="course-card" style="text-align: center;">
+            <i class="fas fa-globe" style="font-size: 3rem; color: #5c7954; margin-bottom: 20px;"></i>
+            <h5 style="font-weight: 700; margin-bottom: 15px;">Website</h5>
+            <p>Visit our official website</p>
+            <a href="https://solardadschools.com/siit" class="btn btn-sm btn-primary mt-2">Visit Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky CTA Button -->
+  <div class="sticky-cta">
+    <a href="#application">
+      <i class="fas fa-graduation-cap"></i> Apply Now
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <section class="cid-sbwv0tje87" id="footer1-2l" style="background: #2d3748; color: #fff;">
+    <div class="container">
+        <div class="media-container-row content text-white">
+            <div class="col-12 col-md-3">
+                <div class="media-wrap">
+                    <img src="assets/images/Sola.jpg" alt="Solardad Schools" title="">
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">Address</h5>
+                <p class="mbr-text"><strong>SIIT Campus</strong><br>No. 1 Ikuehi Close, GRA, Okene - Kogi State, Nigeria</p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">Contact SIIT</h5>
+                <p class="mbr-text">
+                  Tel: 09064999897<br>
+                  Tel: 08135718993<br>
+                  Email: solardadschools@gmail.com
+                </p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">Quick Links</h5>
+                <p class="mbr-text">
+                  - <a href="/" class="text-white"><u>Home</u></a><br>
+                  - <a href="/about-us" class="text-white"><u>About Us</u></a><br>
+                  - <a href="/siit" class="text-white"><u>SIIT Program</u></a><br>
+                  - <a href="/apply" class="text-white"><u>Apply</u></a><br>
+                  - <a href="/contact" class="text-white"><u>Contact Us</u></a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-sm-12"><hr></div>
+            </div>
+            <div class="media-container-row mbr-white">
+                <div class="col-sm-6 copyright">
+                    <p class="mbr-text mbr-fonts-style display-7">
+                      © Copyright 2025-2027 <b>Solardad Schools, Okene - SIIT</b> - All Rights Reserved.
+                    </p>
+                    <p><em>Designed by <a href="https://wa.me/+2348135718993/?text=Hi%20Elijah,%20I%20need%20your%20services.%20My%20name%20is%20_____" target="_blank"><u><strong>Elijah Lawal</strong></u></a></em></p>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/dropdown/js/nav-dropdown.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+
+  <script>
+    // FAQ Toggle Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      
+      faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+          const answer = this.nextElementSibling;
+          const isActive = this.classList.contains('active');
+          
+          // Close all FAQs
+          document.querySelectorAll('.faq-question').forEach(q => {
+            q.classList.remove('active');
+          });
+          document.querySelectorAll('.faq-answer').forEach(a => {
+            a.classList.remove('active');
+          });
+          
+          // Open clicked FAQ if it wasn't active
+          if (!isActive) {
+            this.classList.add('active');
+            answer.classList.add('active');
+          }
+        });
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Form validation enhancement
+      const form = document.querySelector('form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          const submitBtn = this.querySelector('.submit-btn');
+          submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+          submitBtn.disabled = true;
+        });
+      }
+    });
+  </script>
+</body>
+</html>="curriculum-btn"><i class="fas fa-download"></i> Download PDF</a>
+            <a href="#" class
